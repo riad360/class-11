@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1270px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+}
+
+.dev-data h1 {
+    text-align: center;
+    background-color: brown;
+    padding: 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.devs-data {
+
+    position: relative;
+    cursor: pointer;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+}
+
+.devs-data :hover .devs-bio {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.devs-data::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    height: 95%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(16, 172, 11, 0.534);
+    transition: .6s;
+    transform: scale(0);
+}
+
+.devs-data:hover::before {
+
+    transform: scale(1);
+}
+
+.devs-data .devs-img {
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+    border: 3px solid rgb(88, 10, 85);
+    border-radius: 50%;
+}
+
+.devs-data .devs-img img {
+
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.devs-data .devs-img img::before {
+    content: '';
+    top: 0;
+    background-color: rgba(13, 109, 77, 0.24);
+}
+
+.devs-data .devs-bio {
+
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .9s;
+
+}
+
+.devs-data:hover .devs-bio {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.devs-data .devs-bio h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.devs-data .devs-bio h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f9f9f9;
+}
+
+.devs-data .devs-bio h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: bisque;
+}
+
+/*  familly-phone Data */
+
+.familly-phone {
+    max-width: 1270px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.familly-data {
+    width: 24%;
+    margin-right: 1%;
+    box-shadow: 0px 10px 3px 0 rgb(228, 194, 194);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.familly-data img {
+    width: 100%;
+}
+
+.familly-data .familly-detiles {
+    padding: 20px 0;
+    font-family: sans-serif;
+
+}
+
+.familly-data .familly-detiles h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: rgb(189, 178, 22);
+}
+
+.familly-data .familly-detiles h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: green;
+}
+
+.familly-data .familly-detiles h3 {
+    color: rgb(43, 255, 0);
+}
+
+
+/* Student Data */
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 1%;
+    height: 40px;
+}
+
+.student-data {
+    text-align: center;
+}
+
+
+
+.student-data table {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.student-data table tbody {}
+
+.student-data table tbody tr:nth-child(even) {
+    background-color: #199c083b;
+}
+
+.student-data table tbody th {
+    background-color: #afff0075;
+}
+
+.stdunt-info,
+.stdunt-result {
+    font-size: 30px;
+    background: cadetblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 60px;
+
+}
+
+.stdunt-result {}
+
+.student-data table tbody tr .sl {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.student-data table tbody tr .si {
+    font-size: 18px;
+}
+
+.student-data table tbody tr .sn {
+    width: 5%;
+    font-weight: 800;
+    font-size: 18px;
+}
